@@ -1,0 +1,101 @@
+
+/*  profile  Goodmorning message Bottom divv css start  */
+  
+/* Button used to show a profile Goodmorning message Bottom  fixed at the bottom of the page  Css  start */
+
+
+
+.chipGoodMorningShow {
+  display:inline-block;
+  padding:2px;
+  font-size:13px;
+  line-height:35px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  transition: opacity 0.6s;
+  position: fixed; /* Fixed/sticky position */
+  bottom:60px; /* Place the button at the bottom of the page */
+  left:70px; /* Place the button 30px from the right */
+  z-index:90000001; /* Make sure it does not overlap */
+  transition: opacity 0.6s;
+  box-shadow:0px 0px 8px 1px black;
+}
+
+.chipGoodMorningShow img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.closebtnGoodmorning {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #888;
+  font-weight: bold;
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 5px;
+}
+
+.closebtnGoodmorning:hover {
+  color: #000;
+ 
+}
+
+
+
+
+
+@media screen and (max-width: 768px) 
+{
+
+  .chipGoodMorningShow 
+  {
+     padding: 0 12px;
+    height: 25px;
+    font-size:11px;
+    transition: opacity 0.6s;
+    line-height: 23px;
+  }
+  .chipGoodMorningShow img 
+  {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  .closebtnGoodmorning 
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #888;
+    font-weight: bold;
+    float: right;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 5px;
+  }
+}
+
+
+
+
+
+/*  profile  Goodmorning message Bottom divv css end  */
+
+
+/* Button used to show a Goodmorning message Bottom fixed at the bottom of the page CSS  end */
+
+
+
+
+
+
+
+

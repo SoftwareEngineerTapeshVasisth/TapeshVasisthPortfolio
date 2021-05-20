@@ -1,0 +1,184 @@
+
+	
+.wevService
+{
+  width:100%;
+  min-height:400px;
+  box-shadow:0px 7px 10px 2px black;
+  transition:1.4s;
+}
+
+
+.wevService:hover
+{
+  box-shadow:0px 7px 5px 1px silver;
+  transition:1.4s;
+  border-radius:25px;
+}
+
+
+
+.mainWebServiceBorder::after
+{
+  content:'';
+  display: block;
+  width:0;
+  height:6px;
+  background:linear-gradient(to top, #008aff,#00ffe7);
+  transition: width 3s;
+  margin-top:6px;
+  margin-bottom:14px;
+  filter: blur(30px);
+  background: linear-gradient(to top, #008aff,#00ffe7);
+  animation: animateWebServiceDiv 5s linear infinite;
+  border-bottom-right-radius:20px;
+  border-bottom-left-radius:20px;
+}
+
+@keyframes animateWebServiceDiv
+{
+	0%,100%
+	{
+		filter:hue-rotate(0deg);
+	}
+
+    50%
+    {
+    	filter:hue-rotate(360deg);
+    }
+}
+
+.mainWebServiceBorder:hover::after
+{
+  width:100%;
+  transition: width 2s;
+}
+
+
+
+.webServiceHeading
+{
+	font-size:22px;
+	word-wrap: break-word;
+	text-align: center;
+	color:silver;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	text-transform: capitalize;
+	background: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
+  	-o-transition: all .6s ease-in-out;
+  	-webkit-transition: all .6s ease-in-out;
+  	transition: all .6s ease-in-out;
+  	background-size: 200% auto;
+  	letter-spacing: 1px;
+  	font-family:initial;
+  	font-weight: bold;
+  	transition:1s;
+}
+
+.wevService:hover .webServiceHeading
+{
+  color:white;
+  font-family:cursive;
+  text-shadow: 2px 2px 4px #000000;
+  background-position: right center;
+  box-shadow: 0px 10px 30px 0px rgba(193, 34, 10, 0.2);
+}
+
+
+
+
+.firstDivWebService
+{
+  background: linear-gradient(-50deg, rgb(246 255 89), rgb(198 58 234), rgb(142 72 238), rgb(33 227 127));
+}
+
+.secondDivWebService
+{
+  background: linear-gradient(50deg, rgb(33 227 127), rgb(142 72 238), rgb(198 58 234), rgb(246 255 89));
+}
+
+
+
+
+.overlayMainWebServiceDiv
+{
+	position:relative;
+	width:100%;
+	margin-top: 10%;
+}
+
+.overlayContentdiv {
+  position:absolute;
+  bottom: 100%;
+  left:0px;
+  right:0px;
+  background-color: #008CBA;
+  overflow: hidden;
+  width:100%;
+  height:0;
+  transition:.9s ease;
+
+}
+
+.overlayMainWebServiceDiv:hover .overlayContentdiv {
+  opacity: 0.9;
+  background-color:black;
+  bottom:0;
+  height: 100%;
+  border-bottom-right-radius:25px;
+  border-bottom-left-radius:25px;
+}
+
+
+
+
+
+
+
+
+.buttonGetStart
+{
+	font-size:14px;
+    color: white;
+    box-shadow:0px 0px 10px 2px orangered;
+    cursor:pointer;
+    letter-spacing:1px;
+    background-color:white;
+    position:relative;
+    transition:1s;
+    border-radius:50px;
+    opacity:none;
+
+}
+
+.buttonGetStarttype
+{
+   color: orangered;
+   cursor:pointer;
+   transition:1s;
+}
+
+
+.buttonGetStart:hover
+{
+   padding:12px;
+    transition:1s;
+}
+
+.buttonGetStart:hover .buttonGetStarttype
+{
+  position: relative;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  height: 100%;
+  width: 100%;
+  background-color:orangered;
+  color:white;
+  font-weight:bold;
+  padding:8px;
+  transition:1s;
+  box-shadow:0px 0px 10px 2px black;
+}
+
