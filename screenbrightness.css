@@ -1,0 +1,57 @@
+
+.checkboxfornight
+{
+  position: fixed;
+  top: 110px;
+  right:12px;
+  -webkit-appearance:none; /* this is vary usefull to change default design of checkbox #0f101e; */
+  width:2px;
+  height:40px;
+  background-color:#0f101e;
+  border-radius:20px;
+  cursor: pointer;
+  align-items: center;
+  z-index:90000001;
+  outline: none;
+  box-shadow:0px 0px 5px 1px black;
+}
+
+.checkboxfornight:checked
+{
+  background:white;
+}
+
+.checkboxfornight:before
+{
+  content:'';
+  position:absolute;
+  width:15px;
+  height:15px;
+  background-color: white;
+  border-radius:20px;
+  top:0px;
+  left:-6px;
+  transition:0.6s;
+  box-shadow:0px 0px 5px 1px black;
+}
+
+.checkboxfornight:checked::before
+{
+  top:24px;
+  background-color: yellow;
+  border:1px solid #0f101e;
+  box-shadow: 0 0 10px 2px orangered, 0 0 20px 2px orangered, -10px 30px 70px 25px yellow;;
+
+}
+
+
+
+
+.checkboxfornight:checked ~ *
+{
+  filter: brightness(0.4);
+  transition:0.6s;
+  /*filter:sepia(1);*/
+  /*filter:drop-shadow(1px 1px 2px black);*/
+  /*filter:invert(1);*/
+}
